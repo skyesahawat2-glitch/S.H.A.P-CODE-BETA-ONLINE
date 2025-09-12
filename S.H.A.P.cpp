@@ -4,24 +4,46 @@
 int main (void)
 {
 	printf("------------system online-----------\n");
-  char user[10], pass[10],direction2[12],direction3[3],direction5[20],name1[20],surename1[20],direction12[20];
-  char user1[]="admin",pass1[]="pass",name[]="thee",surename[]="sahawat",direction1[]="access_sever",direction4[]="yes",direction6[]="on",direction8[]="access_helper",direction9[]="help",direction10[]="access_calculator",direction11[]="exit";
-  char cal1[]="plus",cal2[]="minus",direction13[]="cam",direction14[]="exit",direction15[]="out",direction16[]="logout",direction17[]="access_pjmm",direction18[]="access_dmm",direction_yes[]="yes",direction_no[]="no";
+	sleep(1);
+	  system("cls");
+       printf("1  2  3  4  5  6  7  8  9  0\nq  w  e  r  t  y  u  i  o  p\na  s  d  f  g  h  j  k  l  ;\n'  z  x  c  v  b  n  m  ,  .\n");
+       sleep(0.9);
+       system("cls");
+       printf(".-. ..- -. / ... .-.-.- .... .-.-.- .- .-.-.- .--. / ... -.-- ... - . -- / ... -.-- ... - . -- / -.-. --- -- .--. .. .-.. .. -. --.\n");
+       sleep(0.9);
+       system("cls");
+       printf(".-. ..- -. / ... .-.-.- .... .-.-.- .- .-.-.- .--. / ... -.-- ... - . -- / ... -.-- ... - . -- / -.-. --- -- .--. .. .-.. .. -. --. / .--. .-. --- --. .-. .- -- / .---- / .-. ..- -.");
+       sleep(0.9);
+       system("cls");
+       printf(".-. ..- -. / ... .-.-.- .... .-.-.- .- .-.-.- .--. / ... -.-- ... - . -- / ... -.-- ... - . -- / -.-. --- -- .--. .. .-.. .. -. --. / .--. .-. --- --. .-. .- -- / .---- / .-. ..- -. / .--. .-. --- --. .-. .- -- / ..--- / .-. ..- -.");
+       sleep(1);
+       system("cls");
+       printf(".-. ..- -. / ... .-.-.- .... .-.-.- .- .-.-.- .--. / ... -.-- ... - . -- / ... -.-- ... - . -- / -.-. --- -- .--. .. .-.. .. -. --. / .--. .-. --- --. .-. .- -- / .---- / .-. ..- -. / .--. .-. --- --. .-. .- -- / ..--- / .-. ..- -. / .--. .-. --- --. .-. .- -- / ...-- / .-. ..- -.");
+       sleep(0.9);
+       system("cls");
+       printf(".-. ..- -. / ... .-.-.- .... .-.-.- .- .-.-.- .--. / ... -.-- ... - . -- / ... -.-- ... - . -- / -.-. --- -- .--. .. .-.. .. -. --. / .--. .-. --- --. .-. .- -- / .---- / .-. ..- -. / .--. .-. --- --. .-. .- -- / ..--- / .-. ..- -. / .--. .-. --- --. .-. .- -- / ...-- / .-. ..- -. / .--. .-. --- --. .-. .- -- / .--. .-. --- .--. . .-. - -.-- ---... --- -.-");
+       sleep(1);
+       system("cls");
+log:
+  char user[10], pass[10],direction2[12],direction3[3],direction5[20],name1[20],surename1[20],direction12[20],directionx[20],direction_tl[20];
+  char user1[]="admin",pass1[]="pass",name[]="thee",surename[]="sahawat",direction1[]="access_sever",direction4[]="yes",direction8[]="access_helper",direction9[]="help",direction10[]="access_calculator",direction11[]="exit";
+  char cal1[]="plus",cal2[]="minus",direction13[]="cam",direction14[]="exit",direction15[]="out",direction16[]="logout",direction17[]="access_pjmm",direction18[]="access_dmm",direction_yes[]="yes",direction_no[]="no",direction19[]="info",direction20[]="welcome",direction21[]="access_xcs";
+  char direction22[]="tl",direction23[]="j";
   char cal[20],ps[20],direction_dmm[20];
   int i=0;
-  float num1,num2,num3,num4;
+  int num1,num2,num3,num4;
 do{
-   log:
-  printf("--------S.H.A.P login system--------\n");
-  printf("if you want to exit\nusername and password = exit\n\n");
+  printf("--------S.H.A.P login terminal--------\n");
+  printf("if you want to exit enter exit\n------------------------------------\n");
   printf("username:");
   scanf("%s",user);
   printf("password:");
    scanf("%s",pass);
   if(strcmp(user,user1)==0 && strcmp(pass,pass1)==0)
-   {   
+   {
        system("cls");
-   	   printf("login successful\nwelcome to S.H.A.P system\n");
+   	   printf("login successful\n");
+   	   printf("welcome to S.H.A.P system\n");
    	   printf("if you don't know command enter help\n\n");
        i=3;
        start:
@@ -32,9 +54,10 @@ do{
        	//sever
        	system("cls");
          printf("-----welcome to S.H.S-----\n");
-         printf("if you want to turn on S.H.S text on:");
+         SHS:
+         printf("do you want to turn on S.H.S system:");
          scanf("%s",direction5);
-         if (strcmp(direction5,direction6)==0)
+         if (strcmp(direction5,direction4)==0)
          {
          system("pause");
          system("cls");
@@ -77,10 +100,18 @@ do{
          system("cls");
          goto start;
 		 }
+		 else if (strcmp(direction5,direction_no)==0)
+		 {
+		 printf("ok\n");
+		 system("pause");
+		 system("pause");
+		 }
 		 else
 		 {
+		  printf("command not found\n");
+		  system("pause");
 		  system("cls");
-		  goto start;
+		  goto SHS;
 		 }
        }
        else if (strcmp(direction2,direction17)==0)
@@ -93,7 +124,6 @@ do{
        	printf("surename:");
        	scanf("%s",surename1);
        	if (strcmp(name,name1)==0 && strcmp(surename,surename1)==0)
-       	{
        	pjmm:
        	system("cls");
        	printf("hi skye and welcome\n");
@@ -102,8 +132,6 @@ do{
        	printf("new project count:1\n");
        	printf("code list\n");
        	printf("1.access_dmm = door manage ment\n");
-       	printf("2.out = exit this program\n");
-       	printf("3.exit = exit\n");
        	printf("project selected:");
        	scanf("%s",ps);
        	if (strcmp(ps,direction18)==0)
@@ -140,18 +168,7 @@ do{
 		system("pause");
 		system("cls");
 		goto dmm;
-	    }
 		}
-		else if (strcmp(ps,direction14)==0)
-		{
-		system("cls");
-		return 0;
-		}
-		else if (strcmp(ps,direction15)==0)
-	    {
-	    system("cls");
-		goto start;
-	    }
 		}
 	   else
 	   {
@@ -232,9 +249,10 @@ do{
 	   printf("2.access_calculator = run calculator\n");
 	   printf("3.access_helper = run H.E.L.P.E.R (admin only)\n");
 	   printf("4.access_pjmm = run P.J.M.M (admin only)\n");
-	   printf("5.access_dmm = run door manage ment\n");
-	   printf("6.logout = logout\n");
-	   printf("7.exit = exit\n");
+	   printf("5.access_xcs = run XCS\n");
+	   printf("6.info = show system info\n");
+	   printf("7.logout = logout\n");
+	   printf("8.exit = exit\n");
 	   system("pause");
 	   system("cls");
 	   goto start;
@@ -244,7 +262,7 @@ do{
 	   	//calculator
 	   	system("cls");
 	   	printf("----welcome to calculator----\n");
-	   	printf("WARNING:this calculator can only plus-minus\n");
+	   	printf("WARNING:this calculator can only plus-minus\n\n");
 	   	system("pause");
 	   	system("cls");
 	   	cal1:
@@ -255,11 +273,11 @@ do{
 	   	system("cls");
 	   	printf("plus\n");
 		printf("number1:");
-		scanf("%f",&num1);
+		scanf("%d",&num1);
 		printf("number2:");
-		scanf("%f",&num2);
-		float num3=num1+num2;
-		printf("sum = %f\n",num3);
+		scanf("%d",&num2);
+		int num3=num1+num2;
+		printf("\nsum = %d\n",num3);
 		system("pause");
 		system("cls");
 		goto start;	
@@ -269,11 +287,11 @@ do{
 		system("cls");
 		printf("minus\n");
 		printf("number1:");
-		scanf("%f",&num1);
+		scanf("%d",&num1);
 		printf("number2:");
-		scanf("%f",&num2);
-		float num3=num1-num2;
-		printf("sum = %f\n",num3);
+		scanf("%d",&num2);
+		int num3=num1-num2;
+		printf("\nsum = %d\n",num3);
 		system("pause");
 		system("cls");
 		goto start;
@@ -286,7 +304,7 @@ do{
 		system("cls");
 		goto cal1;
 		}
-	    }
+	   }
 	   else if (strcmp(direction2,direction11)==0)
 	   {
 	   	system("cls");
@@ -298,42 +316,55 @@ do{
 	   	system("cls");
 	   	goto log;
 	   }
-	    else if (strcmp(direction2,direction18)==0)
-       	{
-       	system("cls");
-       	printf("welcome to\n");
-       	printf("D  . M    . M\n"); 
-       	printf("DOOR MANAGE MENT\n");
-       	dmm2:
-       	printf("do you want to open-close door:");
-       	scanf("%s",direction_dmm);
-       	if(strcmp(direction_dmm,direction_yes)==0)
-       	{
-       	system("cls");
-       	printf("door moveing\n");
-		sleep(4);
-		printf("door moved\n");
-		system("pause");
-		system("cls");
-		goto start;	
+	   else if (strcmp(direction2,direction19)==0)
+	   {
+	   	system("cls");
+	   printf("welcome to\n");
+	   printf("------S.H.A.P SYSTEM INFO TERMINAL------\n");
+	   printf("S.H.A.P system is\n\n");
+	   printf("development by");
+	   printf(" thee sahawat (skye) No.14 M.1/5 SW2 school\n");
+	   printf("inspiration by");
+	   printf(" H.E.L.P.E.R SYSTEM by EDWIN MURRAY IN FNAF\n");
+	   printf("---------------------------------------------------------\n");
+	   system("pause");
+	   system("cls");
+	   goto start;
+	   }
+	   else if (strcmp(direction2,direction21)==0)
+	   {
+	   	system("cls");
+	    printf("welcome to\n");
+	    printf("X C          S\n");
+	    printf("X CONNECTION SYSTEM\n");
+	    printf("code list\n");
+	    printf("enter connection:");
+	    scanf("%s",directionx);
+	    if (strcmp(directionx,direction22)==0)
+	    {
+	    system("cls");
+	    printf("T     L    S\n");
+	    printf("TRAIN LINK SYSTEM\n");
+	    system("pause");
+	    system("cls");
+	    printf("train system list\n");
+	    printf("1.j = J-LINK\n");
+	    printf("2.ALEART (NOT AVALIBLE)\n");
+	    printf("train system seleact:");
+	    scanf("%s",direction_tl);
+	    if (strcmp(direction_tl,direction23)==0)
+	    {
+	    system("cls");
+	    printf("J-LINK SYSTEM:");
+	    sleep(3);
+	    system("cls");
+	    printf("J-LINK SYSTEM:ONLINE\n");
+	    printf("J-LINK REQUEST\n");
+	    printf("a = accept d = decline:");
+	    
 		}
-		else if (strcmp(direction_dmm,direction_no)==0)
-		{
-		system("cls");
-		printf("ok\n");
-		system("pause");
-		system("cls");
-		goto start;
 		}
-		else
-		{
-		system("cls");
-		printf("command not found\n");
-		system("pause");
-		system("cls");
-		goto dmm2;
-	    }
-	    }
+	   }
 	   else
 	   {
 	   printf("command not found\n");
@@ -344,8 +375,8 @@ do{
    }
    else if (strcmp(user,direction14)==0 && strcmp(pass,direction14)==0)
    {
-   system("cls");
-   return 0;
+    system("cls");
+    return 0;
    }
   else
   {
@@ -368,3 +399,4 @@ do{
 }
 while(i<3);
 }
+
