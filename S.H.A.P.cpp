@@ -16,19 +16,19 @@ int main (void)
        sleep(0.9);
        system("cls");
        printf(".-. ..- -. / ... .-.-.- .... .-.-.- .- .-.-.- .--. / ... -.-- ... - . -- / ... -.-- ... - . -- / -.-. --- -- .--. .. .-.. .. -. --. / .--. .-. --- --. .-. .- -- / .---- / .-. ..- -. / .--. .-. --- --. .-. .- -- / ..--- / .-. ..- -.");
-       sleep(1);
+       sleep(0.9);
        system("cls");
        printf(".-. ..- -. / ... .-.-.- .... .-.-.- .- .-.-.- .--. / ... -.-- ... - . -- / ... -.-- ... - . -- / -.-. --- -- .--. .. .-.. .. -. --. / .--. .-. --- --. .-. .- -- / .---- / .-. ..- -. / .--. .-. --- --. .-. .- -- / ..--- / .-. ..- -. / .--. .-. --- --. .-. .- -- / ...-- / .-. ..- -.");
        sleep(0.9);
        system("cls");
        printf(".-. ..- -. / ... .-.-.- .... .-.-.- .- .-.-.- .--. / ... -.-- ... - . -- / ... -.-- ... - . -- / -.-. --- -- .--. .. .-.. .. -. --. / .--. .-. --- --. .-. .- -- / .---- / .-. ..- -. / .--. .-. --- --. .-. .- -- / ..--- / .-. ..- -. / .--. .-. --- --. .-. .- -- / ...-- / .-. ..- -. / .--. .-. --- --. .-. .- -- / .--. .-. --- .--. . .-. - -.-- ---... --- -.-");
-       sleep(1);
+       sleep(0.9);
        system("cls");
 log:
   char user[10], pass[10],direction2[12],direction3[3],direction5[20],name1[20],surename1[20],direction12[20],directionx[20],direction_tl[20],direction_link[20];
   char user1[]="admin",pass1[]="pass",name[]="thee",surename[]="sahawat",direction1[]="access_sever",direction4[]="yes",direction8[]="access_helper",direction9[]="help",direction10[]="access_calculator",direction11[]="exit";
   char cal1[]="plus",cal2[]="minus",direction13[]="cam",direction14[]="exit",direction15[]="out",direction16[]="logout",direction17[]="access_pjmm",direction18[]="access_dmm",direction_yes[]="yes",direction_no[]="no",direction19[]="info",direction20[]="welcome",direction21[]="access_xcs";
-  char direction22[]="tl",direction23[]="j",direction_a[]="a",direction_d[]="d";
+  char direction22[]="tls",direction23[]="j",direction_a[]="a",direction_d[]="d";
   char cal[20],ps[20],direction_dmm[20];
   int i=0;
   int num1,num2,num3,num4;
@@ -325,8 +325,8 @@ do{
 	   printf("development by");
 	   printf(" thee sahawat (skye) No.14 M.1/5 SW2 school\n");
 	   printf("inspiration by");
-	   printf(" H.E.L.P.E.R SYSTEM by EDWIN MURRAY IN FNAF\n");
-	   printf("---------------------------------------------------------\n");
+	   printf(" H.E.L.P.E.R SYSTEM by EDWIN MURRAY IN FNAF SOTM\n");
+	   printf("--------------------------------------------------------------\n");
 	   system("pause");
 	   system("cls");
 	   goto start;
@@ -335,9 +335,11 @@ do{
 	   {
 	   	system("cls");
 	    printf("welcome to\n");
+	    xcs:
 	    printf("X C          S\n");
 	    printf("X CONNECTION SYSTEM\n");
 	    printf("code list\n");
+	    printf("1.tls = train link system\n");
 	    printf("enter connection:");
 	    scanf("%s",directionx);
 	    if (strcmp(directionx,direction22)==0)
@@ -347,6 +349,7 @@ do{
 	    printf("TRAIN LINK SYSTEM\n");
 	    system("pause");
 	    system("cls");
+	    tls:
 	    printf("train system list\n");
 	    printf("1.j = J-LINK\n");
 	    printf("2.ALEART (NOT AVALIBLE)\n");
@@ -478,7 +481,7 @@ do{
 	    sleep(3);
 	    system("cls");
 	    printf("J-LINK DOOR CLOSING");
-	    sleep(3);
+	    sleep(5);
 	    system("cls");
 	    printf("J-LINK DOOR CLOSED");
 	    sleep(2);
@@ -492,19 +495,21 @@ do{
 	    printf("J-LINK UNCOUP in !1!");
 	    sleep(1);
 	    system("cls");
-	    printf("J-LINK UNCOUP\n");
+	    printf("J-LINK UNCOUPLING\n");
 	    sleep(6);
 	    printf("UNCOUP SUCCESSFUL\n");
 	    sleep(2);
 	    printf("LATER UNCOUP SPEED SET:80 KM/H\n");
-	    sleep(2);
+	    sleep(1);
 	    printf("UNCOUP BOGIE BREAK SET:FULLBREAK\n");
-	    sleep(2);
+	    sleep(1);
 	    printf("UNCOOP BOGIE SPEED:20 KM/H\n");
 	    printf("--------------------------\n");
-	    sleep(2);
+	    sleep(1);
 	    printf("SYSTEM COMPLEATE\n");
 	    system("pause");
+	    system("cls");
+	    goto start;
 		}
 		else if (strcmp(direction_link,direction_d)==0)
 		{
@@ -518,17 +523,58 @@ do{
 		else 
 		{
 		system("cls");
-		printf("command not found");
+		printf("command not found\n");
+		printf("-----------------\n");
 		system("pause");
 		system("cls");
 		goto jlink;
 		}
 	    }
+	    else if (strcmp(direction_tl,direction15)==0)
+	    {
+	    system("cls");
+	    goto start;
+		}
+	    else if (strcmp(direction_tl,direction14)==0)
+	    {
+	    system("cls");
+	    return 0;
+		}
+	    else
+	    {
+	    system("cls");
+	    printf("command not found\n");
+	    printf("-----------------\n");
+	    system("pause");
+	    system("cls");
+	    goto tls;
+		}
+	    }
+		else if (strcmp(directionx,direction15)==0)
+		{
+		system("cls");
+		goto start;
+		}
+		else if (strcmp(directionx,direction14)==0)
+		{
+		system("cls");
+		return 0;
+		}
+		else 
+		{
+		system("cls");
+		printf("command not found\n");
+		printf("-----------------\n");
+		system("pause");
+		system("cls");
+		goto xcs;
 		}
 	   }
 	   else
 	   {
+	   system("cls");
 	   printf("command not found\n");
+	   printf("-----------------\n");
 	   system ("pause");
 	   system("cls");
 	   goto start;
@@ -560,4 +606,3 @@ do{
 }
 while(i<3);
 }
-
