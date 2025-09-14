@@ -341,6 +341,8 @@ do{
 	    printf("X CONNECTION SYSTEM\n");
 	    printf("code list\n");
 	    printf("1.tls = train link system\n");
+	    printf("2.out = exit this projram\n");
+	    printf("3.exit = exit projram\n");
 	    printf("enter connection:");
 	    scanf("%s",directionx);
 	    if (strcmp(directionx,direction22)==0)
@@ -354,6 +356,8 @@ do{
 	    printf("train system list\n");
 	    printf("1.j = J-LINK\n");
 	    printf("2.ALEART (NOT AVALIBLE)\n");
+	    printf("3.out = exit this program\n");
+	    printf("4.exit = exit program\n");
 	    printf("train system seleact:");
 	    scanf("%s",direction_tl);
 	    if (strcmp(direction_tl,direction23)==0)
