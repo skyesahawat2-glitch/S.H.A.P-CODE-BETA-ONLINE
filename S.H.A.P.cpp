@@ -109,6 +109,7 @@ do{
 		 else
 		 {
 		  printf("command not found\n");
+		  printf("-----------------\n");
 		  system("pause");
 		  system("cls");
 		  goto SHS;
@@ -165,6 +166,7 @@ do{
 		{
 		system("cls");
 		printf("command not found\n");
+		printf("-----------------\n");
 		system("pause");
 		system("cls");
 		goto dmm;
@@ -173,6 +175,7 @@ do{
 	   else
 	   {
 	   	printf("project not found\n");
+	   	printf("-----------------\n");
 	   	system("pause");
 	   	goto pjmm;
 	   }
@@ -225,7 +228,8 @@ do{
 	   else
 	   {
 	   	system("cls");
-	   	printf("command not found");
+	   	printf("command not found\n");
+	   	printf("-----------------\n");
 	   	system("pause");
 	   	goto help;
 	   }
@@ -234,6 +238,7 @@ do{
 	   {
 	   system("cls");
 	   printf("you don't have permission to access this program\n");
+	   printf("------------------------------------------------\n");
 	   system("pause");
 	   system("cls");
 	   goto start;
@@ -301,6 +306,7 @@ do{
 		{
 		system("cls");
 		printf("command not found\n");
+		printf("-----------------\n");
 		system("pause");
 		system("cls");
 		goto cal1;
@@ -309,7 +315,8 @@ do{
 	   else if (strcmp(direction2,direction11)==0)
 	   {
 	   	system("cls");
-	   printf("error:command not found");
+	   printf("error:command not found\n");
+	   printf("-----------------------\n");
 	   return 0;
 	   }
 	   else if (strcmp(direction2,direction16)==0)
@@ -632,6 +639,7 @@ do{
 	 {
 	 system("cls");
      printf("access denied %d/3",i+1);
+     return 0;
     }
       }
   }
