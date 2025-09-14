@@ -245,11 +245,11 @@ do{
 	   system("cls");
 	   printf("----welcome to help terminal----\n");
 	   printf("code list\n");
-	   printf("1.access_sever = start S.H.S\n")
-	   printf("2.access_calculator = run calculator\n")
-	   printf("3.access_helper = run H.E.L.P.E.R (admin only)\n")
-	   printf("4.access_pjmm = run P.J.M.M (admin only)\n")
-	   printf("5.access_dmm = run door manage ment\n")
+	   printf("1.access_sever = start S.H.S\n");
+	   printf("2.access_calculator = run calculator\n");
+	   printf("3.access_helper = run H.E.L.P.E.R (admin only)\n");
+	   printf("4.access_pjmm = run P.J.M.M (admin only)\n");
+	   printf("5.access_dmm = run door manage ment\n");
 	   printf("6.access_xcs = run XCS\n");
 	   printf("7.info = show system info\n");
 	   printf("8.logout = logout\n");
