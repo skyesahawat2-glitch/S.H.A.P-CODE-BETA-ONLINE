@@ -249,10 +249,11 @@ do{
 	   printf("2.access_calculator = run calculator\n");
 	   printf("3.access_helper = run H.E.L.P.E.R (admin only)\n");
 	   printf("4.access_pjmm = run P.J.M.M (admin only)\n");
-	   printf("5.access_xcs = run XCS\n");
-	   printf("6.info = show system info\n");
-	   printf("7.logout = logout\n");
-	   printf("8.exit = exit\n");
+	   printf("5.access_dmm = run door manage ment\n");
+	   printf("6.access_xcs = run XCS\n");
+	   printf("7.info = show system info\n");
+	   printf("8.logout = logout\n");
+	   printf("9.exit = exit\n");
 	   system("pause");
 	   system("cls");
 	   goto start;
@@ -362,7 +363,7 @@ do{
 	    sleep(4);
 	    system("cls");
 	    printf("J-LINK SYSTEM:ONLINE");
-	    sleep(3);
+	    sleep(2);
 	    system("cls");
 	    system("cls");
 	    jlink:
@@ -484,7 +485,7 @@ do{
 	    sleep(5);
 	    system("cls");
 	    printf("J-LINK DOOR CLOSED");
-	    sleep(2);
+	    sleep(3);
 	    system("cls");
 	    printf("J-LINK UNCOUP in !3!");
 	    sleep(1);
@@ -496,14 +497,14 @@ do{
 	    sleep(1);
 	    system("cls");
 	    printf("J-LINK UNCOUPLING\n");
-	    sleep(6);
+	    sleep(7);
 	    printf("UNCOUP SUCCESSFUL\n");
 	    sleep(2);
 	    printf("LATER UNCOUP SPEED SET:80 KM/H\n");
 	    sleep(1);
 	    printf("UNCOUP BOGIE BREAK SET:FULLBREAK\n");
 	    sleep(1);
-	    printf("UNCOOP BOGIE SPEED:20 KM/H\n");
+	    printf("UNCOOP BOGIE SPEED SET:0 KM/H\n");
 	    printf("--------------------------\n");
 	    sleep(1);
 	    printf("SYSTEM COMPLEATE\n");
@@ -529,7 +530,7 @@ do{
 		system("cls");
 		goto jlink;
 		}
-	    }
+		}
 	    else if (strcmp(direction_tl,direction15)==0)
 	    {
 	    system("cls");
@@ -568,6 +569,34 @@ do{
 		system("pause");
 		system("cls");
 		goto xcs;
+		}
+		}
+	    else if (strcmp(direction2,direction18)==0)
+       	{
+       	system("cls");
+       	printf("welcome to\n");
+       	printf("D  . M    . M\n"); 
+       	printf("DOOR MANAGE MENT\n");
+       	dmm1:
+       	printf("do you want to open-close door:");
+       	scanf("%s",direction_dmm);
+       	if(strcmp(direction_dmm,direction_yes)==0)
+       	{
+       	system("cls");
+       	printf("door moveing\n");
+		sleep(4);
+		printf("door moved\n");
+		system("pause");
+		system("cls");
+		goto start;	
+		}
+		else if (strcmp(direction_dmm,direction_no)==0)
+		{
+		system("cls");
+		printf("ok\n");
+		system("pause");
+		system("cls");
+		goto start;
 		}
 	   }
 	   else
