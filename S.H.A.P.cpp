@@ -485,7 +485,7 @@ do{
 	    system("cls");
 	    printf("J-LINK REQUEST\n");
 	    printf("-----------------------\n");
-	    printf("a = accept|d = decline:");
+	    printf("a = accept d = decline:");
 	    scanf("%s",direction_link);
 	    if (strcmp(direction_link,direction_a)==0)
 	    {
