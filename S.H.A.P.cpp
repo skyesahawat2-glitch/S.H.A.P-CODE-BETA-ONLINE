@@ -341,6 +341,7 @@ do{
 	   }
 	   else if (strcmp(direction2,direction21)==0)
 	   {
+	   	//xcs
 	   	system("cls");
 	    printf("welcome to\n");
 	    xcs:
@@ -483,7 +484,8 @@ do{
 	    system("pause");
 	    system("cls");
 	    printf("J-LINK REQUEST\n");
-	    printf("a = accept d = decline:");
+	    printf("-----------------------\n");
+	    printf("a = accept|d = decline:");
 	    scanf("%s",direction_link);
 	    if (strcmp(direction_link,direction_a)==0)
 	    {
@@ -516,7 +518,7 @@ do{
 	    printf("UNCOUP BOGIE BREAK SET:FULLBREAK\n");
 	    sleep(1);
 	    printf("UNCOOP BOGIE SPEED SET:0 KM/H\n");
-	    printf("--------------------------\n");
+	    printf("-----------------------------\n");
 	    sleep(1);
 	    printf("SYSTEM COMPLEATE\n");
 	    system("pause");
