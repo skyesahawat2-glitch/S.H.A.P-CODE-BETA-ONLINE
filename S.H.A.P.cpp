@@ -355,15 +355,13 @@ do{
 	    scanf("%s",directionx);
 	    if (strcmp(directionx,direction22)==0)
 	    {
+	    tls:
 	    system("cls");
 	    printf("T     L    S\n");
 	    printf("TRAIN LINK SYSTEM\n");
-	    system("pause");
-	    system("cls");
-	    tls:
 	    printf("train system list\n");
 	    printf("1.j = J-LINK\n");
-	    printf("2.ALERT (NOT AVALIBLE)\n");
+	    printf("2.a = ALERT\n");
 	    printf("3.out = exit this program\n");
 	    printf("4.exit = exit program\n");
 	    printf("train system seleact:");
@@ -523,7 +521,7 @@ do{
 	    printf("SYSTEM COMPLEATE\n");
 	    system("pause");
 	    system("cls");
-	    goto start;
+	    goto tls;
 		}
 		else if (strcmp(direction_link,direction_d)==0)
 		{
@@ -532,7 +530,7 @@ do{
 		printf("---------------\n");
 		system("pause");
 		system("cls");
-		goto start;
+		goto tls;
 		}
 		else 
 		{
@@ -548,9 +546,28 @@ do{
 		{
 		system("cls");
 		printf("----ALERT TERMINAL----\n");
-		printf("loading....");
+		printf("loading....\n");
 		sleep(2);
-		printf("");
+		system("cls");
+		printf("----ALERT TERMINAL----\n\n");
+		printf("ALERT:SIGNAL NOT FOUND B-S\ntime 21:29 date 09:22:2031\n\n");
+		sleep(1);
+		printf("ALERT:J-LINK UNCOOP\n/time 07:37 date 06:19:2031\n\n");
+		sleep(1);
+		printf("ALERT:EMERGENCY SHUT DOWN ENGIN\ntime 20:23 date 06:13:2031\n\n");
+		sleep(1);
+		printf("ALERT:SHUT DOWN BOGIE ELECTIRIC 200 POINT\ntime 20:21 date 06:13:2031\n\n");
+		sleep(1);
+		printf("ALERT:Disable the hydrogen production process\ntime 20:19 date 06:13:2031\n\n");
+		sleep(1);
+		printf("ALERT:water is too high \n/time 19:24 date 06:13:2031\n\n");
+		sleep(1);
+		printf("ALERT:Hydrogen is too high\n/time 19:16 date 06:13:2031\n\n");
+		sleep(1);
+		printf("another alert please chek another file\n");
+		sleep(1);
+		system("pause");
+		goto tls;
 		}
 	    else if (strcmp(direction_tl,direction15)==0)
 	    {
