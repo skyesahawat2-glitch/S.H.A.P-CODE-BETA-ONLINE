@@ -363,7 +363,7 @@ do{
 	    tls:
 	    printf("train system list\n");
 	    printf("1.j = J-LINK\n");
-	    printf("2.ALEART (NOT AVALIBLE)\n");
+	    printf("2.ALERT (NOT AVALIBLE)\n");
 	    printf("3.out = exit this program\n");
 	    printf("4.exit = exit program\n");
 	    printf("train system seleact:");
@@ -485,7 +485,7 @@ do{
 	    system("cls");
 	    printf("J-LINK REQUEST\n");
 	    printf("-----------------------\n");
-	    printf("a = accept d = decline:");
+	    printf("a = accept|d = decline:");
 	    scanf("%s",direction_link);
 	    if (strcmp(direction_link,direction_a)==0)
 	    {
@@ -543,6 +543,14 @@ do{
 		system("cls");
 		goto jlink;
 		}
+		}
+		else if (strcmp(direction_tl,direction_a)==0)
+		{
+		system("cls");
+		printf("----ALERT TERMINAL----\n");
+		printf("loading....");
+		sleep(2);
+		printf("");
 		}
 	    else if (strcmp(direction_tl,direction15)==0)
 	    {
