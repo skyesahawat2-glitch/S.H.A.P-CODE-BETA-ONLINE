@@ -9,9 +9,6 @@ int main (void)
        printf("1  2  3  4  5  6  7  8  9  0\nq  w  e  r  t  y  u  i  o  p\na  s  d  f  g  h  j  k  l  ;\n'  z  x  c  v  b  n  m  ,  .\n");
        sleep(0.9);
        system("cls");
-       printf(".-. ..- -. / ... .-.-.- .... .-.-.- .- .-.-.- .--. / ... -.-- ... - . -- / ... -.-- ... - . -- / -.-. --- -- .--. .. .-.. .. -. --.\n");
-       sleep(0.9);
-       system("cls");
        printf(".-. ..- -. / ... .-.-.- .... .-.-.- .- .-.-.- .--. / ... -.-- ... - . -- / ... -.-- ... - . -- / -.-. --- -- .--. .. .-.. .. -. --. / .--. .-. --- --. .-. .- -- / .---- / .-. ..- -.");
        sleep(0.9);
        system("cls");
@@ -326,7 +323,7 @@ do{
 	   }
 	   else if (strcmp(direction2,direction19)==0)
 	   {
-	   	system("cls");
+	   system("cls");
 	   printf("welcome to\n");
 	   printf("------S.H.A.P SYSTEM INFO TERMINAL------\n");
 	   printf("S.H.A.P system is\n\n");
@@ -668,7 +665,7 @@ do{
      printf("access denied %d/3",i+1);
      return 0;
     }
-      }
+    }
   }
   i++;
 }
