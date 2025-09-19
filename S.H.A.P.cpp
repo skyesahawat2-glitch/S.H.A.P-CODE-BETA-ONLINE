@@ -553,7 +553,7 @@ do{
 		sleep(1);
 		printf("ALERT:EMERGENCY SHUT DOWN ENGIN\ntime 20:23 date 06:13:2031\n\n");
 		sleep(1);
-		printf("ALERT:SHUT DOWN BOGIE ELECTIRIC 200 POINT\ntime 20:21 date 06:13:2031\n\n");
+		printf("ALERT:SHUT DOWN BOGIE ELECTIRIC POINT 1-200\ntime 20:22 date 06:13:2031\n\n");
 		sleep(1);
 		printf("ALERT:Disable the hydrogen production process\ntime 20:19 date 06:13:2031\n\n");
 		sleep(1);
