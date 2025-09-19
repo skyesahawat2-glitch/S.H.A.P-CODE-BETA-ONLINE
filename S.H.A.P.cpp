@@ -2,7 +2,7 @@
 #include <string.h>
 #include <unistd.h>
 int main (void)
-{  printf("----online----");
+{
 	sleep(1);
 	  system("cls");
        printf("1  2  3  4  5  6  7  8  9  0\nq  w  e  r  t  y  u  i  o  p\na  s  d  f  g  h  j  k  l  ;\n'  z  x  c  v  b  n  m  ,  .\n");
