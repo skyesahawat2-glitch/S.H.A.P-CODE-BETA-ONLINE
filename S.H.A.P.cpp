@@ -27,7 +27,7 @@ log:
   char direction22[]="tls",direction23[]="j",direction_a[]="a",direction_d[]="d";
   char cal[20],ps[20],direction_dmm[20];
   int i=0;
-  int num1,num2,num3,num4;
+  float num1,num2,num3,num4;
 do{
   printf("--------S.H.A.P login terminal--------\n");
   printf("if you want to exit enter exit\n------------------------------------\n");
@@ -275,11 +275,11 @@ do{
 	   	system("cls");
 	   	printf("plus\n");
 		printf("number1:");
-		scanf("%d",&num1);
+		scanf("%f",&num1);
 		printf("number2:");
-		scanf("%d",&num2);
-		int num3=num1+num2;
-		printf("\nsum = %d\n",num3);
+		scanf("%f",&num2);
+		float num3=num1+num2;
+		printf("\nsum = %f\n",num3);
 		system("pause");
 		system("cls");
 		goto start;	
@@ -289,11 +289,11 @@ do{
 		system("cls");
 		printf("minus\n");
 		printf("number1:");
-		scanf("%d",&num1);
+		scanf("%f",&num1);
 		printf("number2:");
-		scanf("%d",&num2);
-		int num3=num1-num2;
-		printf("\nsum = %d\n",num3);
+		scanf("%f",&num2);
+		float num3=num1-num2;
+		printf("\nsum = %f\n",num3);
 		system("pause");
 		system("cls");
 		goto start;
