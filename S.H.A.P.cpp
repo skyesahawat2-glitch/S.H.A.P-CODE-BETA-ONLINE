@@ -298,6 +298,15 @@ do{
 		system("cls");
 		goto start;
 		}
+		else if (strcmp(cal,direction_no)==0)
+		{
+		system("cls");
+		printf("ok\n");
+		printf("--------------\n");
+		system("pause");
+		system("cls");
+		goto start;
+		}
 		else
 		{
 		system("cls");
