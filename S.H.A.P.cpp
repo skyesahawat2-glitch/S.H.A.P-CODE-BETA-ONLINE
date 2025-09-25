@@ -557,7 +557,7 @@ do{
 		printf("----ALERT TERMINAL----\n\n");
 		printf("ALERT:SIGNAL NOT FOUND B-S\ntime 21:29 date 09:22:2031\n\n");
 		sleep(1);
-		printf("ALERT:J-LINK UNCOOP\n/time 07:37 date 06:19:2031\n\n");
+		printf("ALERT:J-LINK UNCOOP\ntime 07:37 date 06:19:2031\n\n");
 		sleep(1);
 		printf("ALERT:EMERGENCY SHUT DOWN ENGIN\ntime 20:23 date 06:13:2031\n\n");
 		sleep(1);
@@ -565,9 +565,9 @@ do{
 		sleep(1);
 		printf("ALERT:Disable the hydrogen production process\ntime 20:19 date 06:13:2031\n\n");
 		sleep(1);
-		printf("ALERT:water is too high \n/time 19:24 date 06:13:2031\n\n");
+		printf("ALERT:water is too high \ntime 19:24 date 06:13:2031\n\n");
 		sleep(1);
-		printf("ALERT:Hydrogen is too high\n/time 19:16 date 06:13:2031\n\n");
+		printf("ALERT:Hydrogen is too high\ntime 19:16 date 06:13:2031\n\n");
 		sleep(1);
 		printf("another alert please chek another file\n");
 		sleep(1);
