@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>
+#include <string.h> 
 #include <unistd.h>
 int main (void)
 {
@@ -24,7 +24,7 @@ log:
   char user[10], pass[10],direction2[12],direction3[3],direction5[20],name1[20],surename1[20],direction12[20],directionx[20],direction_tl[20],direction_link[20];
   char user1[]="admin",pass1[]="pass",name[]="thee",surename[]="sahawat",direction1[]="access_sever",direction4[]="yes",direction8[]="access_helper",direction9[]="help",direction10[]="access_calculator",direction11[]="exit";
   char cal1[]="plus",cal2[]="minus",direction13[]="cam",direction14[]="exit",direction15[]="out",direction16[]="logout",direction17[]="access_pjmm",direction18[]="access_dmm",direction_yes[]="yes",direction_no[]="no",direction19[]="info",direction20[]="welcome",direction21[]="access_xcs";
-  char direction22[]="tls",direction23[]="j",direction_a[]="a",direction_d[]="d";
+  char direction22[]="tls",direction23[]="j",direction24[]="ttie",direction_a[]="a",direction_d[]="d";
   char cal[20],ps[20],direction_dmm[20];
   int i=0;
   float num1,num2,num3,num4;
@@ -594,6 +594,13 @@ do{
 	    goto tls;
 		}
 	    }
+	    else if (strcmp(directionx,direction24)==0)
+	    {
+	    system("cls");
+	    printf("hello and welcome to\n");
+	    printf("T    T          I          E       P\n");
+	    printf("THEE TECHNOLOGY INCOPORATE EMPLOEY PROGRAM\n");
+		}
 		else if (strcmp(directionx,direction15)==0)
 		{
 		system("cls");
