@@ -22,9 +22,9 @@ int main (void)
        system("cls");
 log:
   char user[10], pass[10],direction2[12],direction3[3],direction5[20],name1[20],surename1[20],direction12[20],directionx[20],direction_tl[20],direction_link[20];
-  char user1[]="admin",pass1[]="pass",name[]="thee",surename[]="sahawat",direction1[]="access_sever",direction4[]="yes",direction8[]="access_helper",direction9[]="help",direction10[]="access_calculator",direction11[]="exit";
+  char user1[]="admin",pass1[]="pass",name[]="thee",surename[]="sahawat",direction1[]="access_sever",direction4[]="yes",direction8[]="access_helper",direction9[]="help",direction10[]="access_calculator",direction11[]="exit",direction_ttie[20];
   char cal1[]="plus",cal2[]="minus",direction13[]="cam",direction14[]="exit",direction15[]="out",direction16[]="logout",direction17[]="access_pjmm",direction18[]="access_dmm",direction_yes[]="yes",direction_no[]="no",direction19[]="info",direction20[]="welcome",direction21[]="access_xcs";
-  char direction22[]="tls",direction23[]="j",direction24[]="ttie",direction_a[]="a",direction_d[]="d";
+  char direction22[]="tls",direction23[]="j",direction24[]="ttie",direction_a[]="a",direction_d[]="d",direction_guide[]="guide";
   char cal[20],ps[20],direction_dmm[20];
   int i=0;
   float num1,num2,num3,num4;
@@ -244,7 +244,7 @@ do{
 	   {
 	   	//help
 	   system("cls");
-	   printf("----welcome to help terminal----\n");
+	   printf("------welcome to help terminal------\n");
 	   printf("code list\n");
 	   printf("1.access_sever = start S.H.S\n");
 	   printf("2.access_calculator = run calculator\n");
@@ -255,6 +255,7 @@ do{
 	   printf("7.info = show system info\n");
 	   printf("8.logout = logout\n");
 	   printf("9.exit = exit\n");
+	   printf("-------------------------------------\n");
 	   system("pause");
 	   system("cls");
 	   goto start;
@@ -597,9 +598,106 @@ do{
 	    else if (strcmp(directionx,direction24)==0)
 	    {
 	    system("cls");
-	    printf("hello and welcome to\n");
+	    printf("hello emploey and welcome to\n");
+	    ttie:
 	    printf("T    T          I          E       P\n");
-	    printf("THEE TECHNOLOGY INCOPORATE EMPLOEY PROGRAM\n");
+	    printf("THEE TECHNOLOGY INCOPORATE EMPLOEY PROGRAM\n\n");
+	    printf("command:");
+	    scanf("%s",direction_ttie);
+	    if (strcmp(direction_ttie,direction_guide)==0)
+	    {
+	    char direction_job[30];
+	    char direction_job1[]="mechanic";
+	    system("cls");
+	    printf("welcome to\n");
+	    printf("GUIDE FOR\n");
+	    printf("T    T          I          E\n");
+	    printf("THEE TECHNOLOGY INCOPORATE EMPLOEY\n\n");
+	    system("pause");
+	    job:
+	    system("cls");
+	    printf("please seleact your job:");
+	    scanf("%s",direction_job);
+	    if (strcmp(direction_job,direction_job1)==0)
+	    {
+	    char direction_log[30];
+	    char direction_log1[]="springlock";
+	    logttie:
+	    system("cls");
+	    printf("seleact log:");
+	    scanf("%s",direction_log);
+	    if (strcmp(direction_log,direction_log1)==0)
+	    {
+	    system("cls");
+	    printf("hello thee technology emploey\n");
+	    sleep(2);
+	    printf("in this log we are going to learn how to\n");
+	    printf("switch springlock suit mode\n");
+	    printf("----------------------------------------\n");
+	    sleep(2);
+	    system("pause");
+	    system("cls");
+	    printf("step1:push the red button behind the head\n");
+	    printf("it will turn suit mechanical off\n");
+	    printf("-----------------------------------------\n");
+	    system("pause");
+	    system("cls");
+	    printf("step2:pick your data driver plugit in the hole behind neck and twist\n");
+	    printf("it will turn suit to repair mode\n");
+	    printf("--------------------------------------------------------------------\n");
+	    system("pause");
+	    system("cls");
+	    printf("step3:pick the handcrak and crak the Screw behind the head,arm,body and leg\n");
+	    printf("it make suit switch to human/mechanical mode\n");
+	    printf("--------------------------------------------\n");
+	    system("pause");
+	    system("cls");
+	    printf("step4:push the red button behind the head again to turn off the repair mode\n");
+	    printf("---------------------------------------------------------------------------\n");
+	    sleep(2);
+	    system("cls");
+	    printf("step5:jump into suit and agree your dead\n");
+	    printf("----------------------------------------\n");
+	    sleep(1);
+	    system("cls");
+	    printf("step4:push the red button behind the head again to turn off the repair mode\n");
+	    printf("---------------------------------------------------------------------------\n");
+	    system("pause");
+	    system("cls");
+	    printf("and we are finish\n");
+	    system("pause");
+	    system("cls");
+	    goto logttie;
+		}
+		else
+		{
+		system("cls");
+		printf("log not found\n");
+		printf("-------------\n");
+		system("pause");
+		system("cls");
+		goto logttie;
+		}
+		}
+		else 
+		{
+		system("cls");
+		printf("job not found\n");
+		printf("-------------\n");
+		system("pause");
+		system("cls");
+		goto job;
+		}
+		}
+		else
+		{
+		system("cls");
+		printf("command not found\n");
+		printf("-----------------\n");
+		system("pause");
+		system("cls");
+		goto ttie; 
+		}
 		}
 		else if (strcmp(directionx,direction15)==0)
 		{
