@@ -374,6 +374,7 @@ do{
 	    scanf("%s",direction_tl);
 	    if (strcmp(direction_tl,direction23)==0)
 	    {
+	    //j-link//
 	    system("cls");
 	    printf("J-LINK SYSTEM:OFFLINE");
 	    sleep(4);
@@ -550,6 +551,7 @@ do{
 		}
 		else if (strcmp(direction_tl,direction_a)==0)
 		{
+		//aleart//
 		system("cls");
 		printf("----ALERT TERMINAL----\n");
 		printf("loading....\n");
