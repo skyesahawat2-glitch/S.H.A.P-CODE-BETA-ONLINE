@@ -21,22 +21,25 @@ int main (void)
        sleep(0.9);
        system("cls");
 log:
-  char user[10], pass[10],direction2[12],direction3[3],direction5[20],name1[20],surename1[20],direction12[20],directionx[20],direction_tl[20],direction_link[20];
+  char user[10], pass[10],direction2[12],direction3[3],direction5[20],name1[20],surename1[20],direction12[20],directionx[20],direction_tl[20],direction_link[20],music_band[20];
   char user1[]="admin",pass1[]="pass",name[]="thee",surename[]="sahawat",direction1[]="access_sever",direction4[]="yes",direction8[]="access_helper",direction9[]="help",direction10[]="access_calculator",direction11[]="exit",direction_ttie[20];
   char cal1[]="plus",cal2[]="minus",direction13[]="cam",direction14[]="exit",direction15[]="out",direction16[]="logout",direction17[]="access_pjmm",direction18[]="access_dmm",direction_yes[]="yes",direction_no[]="no",direction19[]="info",direction20[]="welcome",direction21[]="access_xcs";
-  char direction22[]="tls",direction23[]="j",direction24[]="ttie",direction_a[]="a",direction_d[]="d",direction_guide[]="guide";
-  char cal[20],ps[20],direction_dmm[20];
+  char direction22[]="tls",direction23[]="j",direction24[]="ttie",direction_a[]="a",direction_d[]="d",direction_guide[]="guide",forgot[]="forgot",music_band1[]="ajr",pb1[]="iphone";
+  char cal[20],ps[20],direction_dmm[20],pb[20];
   int i=0;
   float num1,num2,num3,num4;
 do{
-  printf("--------S.H.A.P login terminal--------\n");
-  printf("if you want to exit enter exit\n------------------------------------\n");
+  printf("-----------S.H.A.P login terminal-----------\n");
+  printf("if you want to exit enter exit\n");
+  printf("if you forgot username password enter forgot\n");
+  printf("--------------------------------------------\n");
   printf("username:");
   scanf("%s",user);
   printf("password:");
    scanf("%s",pass);
   if(strcmp(user,user1)==0 && strcmp(pass,pass1)==0)
    {
+   	fglog:
        system("cls");
    	   printf("login successful\n");
    	   printf("welcome to S.H.A.P system\n");
@@ -355,8 +358,9 @@ do{
 	    printf("X CONNECTION SYSTEM\n");
 	    printf("code list\n");
 	    printf("1.tls = train link system\n");
-	    printf("2.out = exit this projram\n");
-	    printf("3.exit = exit projram\n");
+	    printf("2.ttie = TTIE program(for TTIE emploey only)\n");
+	    printf("3.out = exit this projram\n");
+	    printf("4.exit = exit projram\n");
 	    printf("enter connection:");
 	    scanf("%s",directionx);
 	    if (strcmp(directionx,direction22)==0)
@@ -604,6 +608,10 @@ do{
 	    ttie:
 	    printf("T    T          I          E       P\n");
 	    printf("THEE TECHNOLOGY INCOPORATE EMPLOEY PROGRAM\n\n");
+	    printf("code list\n");
+	    printf("1.guide = run TTIE guide program\n");
+	    printf("2.out = exit this program\n");
+	    printf("3.exit = exit program\n");
 	    printf("command:");
 	    scanf("%s",direction_ttie);
 	    if (strcmp(direction_ttie,direction_guide)==0)
@@ -618,6 +626,10 @@ do{
 	    system("pause");
 	    job:
 	    system("cls");
+	    printf("job/code list\n");
+	    printf("1.mechanic\n");
+	    printf("2.out = exit this program\n");
+	    printf("3.exit = exit program\n");
 	    printf("please seleact your job:");
 	    scanf("%s",direction_job);
 	    if (strcmp(direction_job,direction_job1)==0)
@@ -626,12 +638,16 @@ do{
 	    char direction_log1[]="springlock";
 	    logttie:
 	    system("cls");
+	    printf("log/code list\n");
+	    printf("1.log1 springlock\n");
+	    printf("2.out = exit this program\n");
+	    printf("3.exit = exit program\n");
 	    printf("seleact log:");
 	    scanf("%s",direction_log);
 	    if (strcmp(direction_log,direction_log1)==0)
 	    {
 	    system("cls");
-	    printf("hello thee technology emploey\n");
+	    printf("hello thee technology mechanic emploey\n");
 	    sleep(2);
 	    printf("in this log we are going to learn how to\n");
 	    printf("switch springlock suit mode\n");
@@ -654,22 +670,26 @@ do{
 	    printf("--------------------------------------------\n");
 	    system("pause");
 	    system("cls");
-	    printf("step4:push the red button behind the head again to turn off the repair mode\n");
+	    printf("step4:remove the data driver to turn off the repair mode\n");
 	    printf("---------------------------------------------------------------------------\n");
-	    sleep(2);
-	    system("cls");
-	    printf("step5:jump into suit and agree your dead\n");
-	    printf("----------------------------------------\n");
 	    sleep(1);
-	    system("cls");
-	    printf("step4:push the red button behind the head again to turn off the repair mode\n");
-	    printf("---------------------------------------------------------------------------\n");
 	    system("pause");
 	    system("cls");
-	    printf("and we are finish\n");
+	    printf("and congratulation we are finish\n");
+	    printf("--------------------------------\n");
 	    system("pause");
 	    system("cls");
 	    goto logttie;
+		}
+		else if (strcmp(direction_log,direction15)==0)
+		{
+		system("cls");
+		goto start;
+		}
+		else if (strcmp(direction_log,direction14)==0)
+		{
+		system("cls");
+		return 0;
 		}
 		else
 		{
@@ -681,6 +701,16 @@ do{
 		goto logttie;
 		}
 		}
+		else if (strcmp(direction_job,direction15)==0)
+		{
+		system("cls");
+		goto start;
+		}
+		else if (strcmp(direction_job,direction14)==0)
+		{
+		system("cls");
+		return 0;
+		}
 		else 
 		{
 		system("cls");
@@ -690,6 +720,16 @@ do{
 		system("cls");
 		goto job;
 		}
+		}
+		else if (strcmp(direction_ttie,direction15)==0)
+		{
+		system("cls");
+		goto start;
+		}
+		else if (strcmp(direction_ttie,direction14)==0)
+		{
+		system("cls");
+		return 0;
 		}
 		else
 		{
@@ -758,6 +798,38 @@ do{
 	   system("cls");
 	   goto start;
 	   }
+   }
+   else if (strcmp(user,forgot)==0 && strcmp(pass,forgot)==0)
+   {
+   	printf("what is your favorite band?:");
+   	scanf("%s",music_band);
+   	printf("what is your frist phone brand:");
+   	scanf("%s",pb);
+   	if (strcmp(music_band,music_band1)==0 && strcmp(pb,pb1)==0)
+   	{
+   	system("cls");
+   	printf("hello skye\n");
+   	printf("username is admin\n");
+   	printf("password is pass\n");
+   	printf("and don't forgot a username and password again\n");
+   	printf("----------------------------------------------\n");
+   	sleep(1);
+   	system("pause");
+   	system("cls");
+   	goto fglog;
+   }
+   	else 
+   	{
+    system("cls");
+   	printf("your not don't have permission to access forgot\n");
+   	printf("please don't use forgot again this is not request\n");
+   	printf("-------------------------------------------------\n");
+   	sleep(1);
+   	system("pause");
+   	system("cls");
+   	goto log;
+	}
+    return 0;
    }
    else if (strcmp(user,direction14)==0 && strcmp(pass,direction14)==0)
    {
