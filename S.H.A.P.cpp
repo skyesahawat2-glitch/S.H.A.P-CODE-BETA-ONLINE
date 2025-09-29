@@ -219,7 +219,7 @@ do{
        if (strcmp(direction12,direction13)==0)
        {
        system("cls");
-       printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                              camera not found                                     \n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+       printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n                              camera not found                                     \n\n\n\n\n\n\n\n\n\n\n\n\n\n");
        system("pause");
        system("cls");
        goto help;
