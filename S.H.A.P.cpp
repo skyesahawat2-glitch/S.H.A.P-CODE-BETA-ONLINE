@@ -124,6 +124,7 @@ do{
        	printf("surename:");
        	scanf("%s",surename1);
        	if (strcmp(name,name1)==0 && strcmp(surename,surename1)==0)
+       	{
        	pjmm:
        	system("cls");
        	printf("hi skye and welcome\n");
@@ -178,7 +179,17 @@ do{
 	   	system("pause");
 	   	goto pjmm;
 	   }
-       } 
+       }
+       else 
+       {
+        printf("you don't have permission to access this program\n");
+        printf("please don't access this program again\n");
+        sleep(1);
+        system("pause");
+        system("cls");
+        goto start;
+	   }
+       }
        else if (strcmp(direction2,direction14)==0)
        {
        	system("cls");
@@ -208,7 +219,7 @@ do{
        if (strcmp(direction12,direction13)==0)
        {
        system("cls");
-       printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n                                    camera not found                                     \n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+       printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                              camera not found                                     \n\n\n\n\n\n\n\n\n\n\n\n\n\n");
        system("pause");
        system("cls");
        goto help;
