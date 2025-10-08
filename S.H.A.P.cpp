@@ -23,12 +23,16 @@ int main (void)
 log:
   char user[10], pass[10],direction2[12],direction3[3],direction5[20],name1[20],surename1[20],direction12[20],directionx[20],direction_tl[20],direction_link[20],music_band[20];
   char user1[]="admin",pass1[]="pass",name[]="thee",surename[]="sahawat",direction1[]="access_sever",direction4[]="yes",direction8[]="access_helper",direction9[]="help",direction10[]="access_calculator",direction11[]="exit",direction_ttie[20];
-  char cal1[]="plus",cal2[]="minus",direction13[]="cam",direction14[]="exit",direction15[]="out",direction16[]="logout",direction17[]="access_pjmm",direction18[]="access_dmm",direction_yes[]="yes",direction_no[]="no",direction19[]="info",direction20[]="welcome",direction21[]="access_xcs";
+  char cal1[]="plus",cal2[]="minus",cal3[]="multiply",cal4[]="divide",direction13[]="cam",direction14[]="exit",direction15[]="out",direction16[]="logout",direction17[]="access_pjmm",direction18[]="access_dmm",direction_yes[]="yes",direction_no[]="no",direction19[]="info",direction20[]="welcome",direction21[]="access_xcs";
   char direction22[]="tls",direction23[]="j",direction24[]="ttie",direction_a[]="a",direction_d[]="d",direction_guide[]="guide",forgot[]="forgot",music_band1[]="ajr",pb1[]="iphone";
   char cal[20],ps[20],direction_dmm[20],pb[20];
   int i=0;
   float num1,num2,num3,num4;
 do{
+  printf("WARNING:THIS PROGRAM IS BETA ONLY\n");
+  printf("---------------------------------\n");
+  system("pause");
+  system("cls");
   printf("-----------S.H.A.P login terminal-----------\n");
   printf("if you want to exit enter exit\n");
   printf("if you forgot username password enter forgot\n");
@@ -277,13 +281,16 @@ do{
 	   else if (strcmp(direction2,direction10)==0)
 	   {
 	   	//calculator
+	   	char another_yes[]="yes",another_no[]="no";
+	   	char want[5];
 	   	system("cls");
-	   	printf("----welcome to calculator----\n");
-	   	printf("WARNING:this calculator can only plus-minus\n\n");
+	   	printf("WARNING:this calculator can only plus-minus\n");
 	   	system("pause");
 	   	system("cls");
 	   	cal1:
-	   	printf("do you want to plus or minus:");
+	   	printf("----welcome to calculator----\n");
+	   	printf("plus-minus-multiply-divide\n");
+	   	printf("what do you want to do:");
 	   	scanf("%s",cal);
 	   	if(strcmp(cal,cal1)==0)
 	   	{
@@ -297,7 +304,18 @@ do{
 		printf("\nsum = %f\n",num3);
 		system("pause");
 		system("cls");
-		goto start;	
+		printf("do you want to do another calculator?:");
+		scanf("%s",want);
+		if (strcmp(want,another_yes)==0)
+		{
+		system("cls");
+		goto cal1;
+		}
+		else if (strcmp(want,another_no)==0)
+		{
+		system("cls");
+		goto start;
+		}
 		}
 		else if (strcmp(cal,cal2)==0)
 		{
@@ -311,6 +329,67 @@ do{
 		printf("\nsum = %f\n",num3);
 		system("pause");
 		system("cls");
+		printf("do you want to do another calculator?:");
+		scanf("%s",want);
+		if (strcmp(want,another_yes)==0)
+		{
+		system("cls");
+		goto cal1;
+		}
+		else if (strcmp(want,another_no)==0)
+		{
+		system("cls");
+		goto start;
+		}
+		}
+		else if (strcmp(cal,cal3)==0)
+		{
+		system("cls");
+		printf("multiply\n");
+		printf("number1:");
+		scanf("%f",&num1);
+		printf("number2:");
+		scanf("%f",&num2);
+		float num3=num1*num2;
+		printf("\nsum = %f\n",num3);
+		system("pause");
+		system("cls");
+		printf("do you want to do another calculator?:");
+		scanf("%s",want);
+		if (strcmp(want,another_yes)==0)
+		{
+		system("cls");
+		goto cal1;
+		}
+		else if (strcmp(want,another_no)==0)
+		{
+		system("cls");
+		goto start;
+		}
+		}
+		else if (strcmp(cal,cal4))
+		{
+		system("cls");
+		printf("divide\n");
+		printf("number1:");
+		scanf("%f",&num1);
+		printf("number2:");
+		scanf("%f",&num2);
+		float num3=num1/num2;
+		printf("\nsum = %f\n",num3);
+		system("pause");
+		system("cls");
+		printf("do you want to do another calculator?:");
+		scanf("%s",want);
+		if (strcmp(want,another_yes)==0)
+		{
+		system("cls");
+		goto cal1;
+		}
+	    }
+		else if (strcmp(want,another_no)==0)
+		{
+		system("cls");
 		goto start;
 		}
 		else if (strcmp(cal,direction_no)==0)
@@ -320,7 +399,6 @@ do{
 		printf("--------------\n");
 		system("pause");
 		system("cls");
-		goto start;
 		}
 		else
 		{
@@ -832,7 +910,7 @@ do{
    	else 
    	{
     system("cls");
-   	printf("your not don't have permission to access forgot\n");
+   	printf("you don't have permission to access forgot\n");
    	printf("please don't use forgot again this is not request\n");
    	printf("-------------------------------------------------\n");
    	sleep(1);
