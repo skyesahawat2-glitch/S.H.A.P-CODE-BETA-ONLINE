@@ -20,6 +20,10 @@ int main (void)
        printf(".-. ..- -. / ... .-.-.- .... .-.-.- .- .-.-.- .--. / ... -.-- ... - . -- / ... -.-- ... - . -- / -.-. --- -- .--. .. .-.. .. -. --. / .--. .-. --- --. .-. .- -- / .---- / .-. ..- -. / .--. .-. --- --. .-. .- -- / ..--- / .-. ..- -. / .--. .-. --- --. .-. .- -- / ...-- / .-. ..- -. / .--. .-. --- --. .-. .- -- / .--. .-. --- .--. . .-. - -.-- ---... --- -.-");
        sleep(0.9);
        system("cls");
+        printf("WARNING:THIS PROGRAM IS BETA ONLY\n");
+        printf("---------------------------------\n");
+        system("pause");
+        system("cls");
 log:
   char user[10], pass[10],direction2[12],direction3[3],direction5[20],name1[20],surename1[20],direction12[20],directionx[20],direction_tl[20],direction_link[20],music_band[20];
   char user1[]="admin",pass1[]="pass",name[]="thee",surename[]="sahawat",direction1[]="access_sever",direction4[]="yes",direction8[]="access_helper",direction9[]="help",direction10[]="access_calculator",direction11[]="exit",direction_ttie[20];
@@ -29,10 +33,6 @@ log:
   int i=0;
   float num1,num2,num3,num4;
 do{
-  printf("WARNING:THIS PROGRAM IS BETA ONLY\n");
-  printf("---------------------------------\n");
-  system("pause");
-  system("cls");
   printf("-----------S.H.A.P login terminal-----------\n");
   printf("if you want to exit enter exit\n");
   printf("if you forgot username password enter forgot\n");
@@ -927,7 +927,6 @@ do{
    }
   else
   {
-  	  {
   	 system("cls");
      printf("error:username or password not found\n!!please try again!! %d/3\n",i+1);
      if(i<2)
@@ -940,7 +939,6 @@ do{
 	 system("cls");
      printf("access denied %d/3",i+1);
      return 0;
-    }
     }
   }
   i++;
