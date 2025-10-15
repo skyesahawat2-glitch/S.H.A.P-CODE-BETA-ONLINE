@@ -20,10 +20,6 @@ int main (void)
        printf(".-. ..- -. / ... .-.-.- .... .-.-.- .- .-.-.- .--. / ... -.-- ... - . -- / ... -.-- ... - . -- / -.-. --- -- .--. .. .-.. .. -. --. / .--. .-. --- --. .-. .- -- / .---- / .-. ..- -. / .--. .-. --- --. .-. .- -- / ..--- / .-. ..- -. / .--. .-. --- --. .-. .- -- / ...-- / .-. ..- -. / .--. .-. --- --. .-. .- -- / .--. .-. --- .--. . .-. - -.-- ---... --- -.-");
        sleep(0.9);
        system("cls");
-        printf("WARNING:THIS PROGRAM IS BETA ONLY\n");
-        printf("---------------------------------\n");
-        system("pause");
-        system("cls");
 log:
   char user[10], pass[10],direction2[12],direction3[3],direction5[20],name1[20],surename1[20],direction12[20],directionx[20],direction_tl[20],direction_link[20],music_band[20];
   char user1[]="admin",pass1[]="pass",name[]="thee",surename[]="sahawat",direction1[]="access_sever",direction4[]="yes",direction8[]="access_helper",direction9[]="help",direction10[]="access_calculator",direction11[]="exit",direction_ttie[20];
