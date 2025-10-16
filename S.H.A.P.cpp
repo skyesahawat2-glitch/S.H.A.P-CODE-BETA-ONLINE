@@ -42,7 +42,12 @@ do{
    	fglog:
        system("cls");
    	   printf("login successful\n");
-   	   printf("welcome to S.H.A.P system\n");
+   	   printf("-------------------------------\n");
+   	   system("pause");
+   	   system("cls");
+   	   printf("hello and welcome to\n");
+   	   printf("S  . H  . A    . P\n");
+   	   printf("SKYE HOME ACCESS POINT\n");
    	   printf("if you don't know command enter help\n\n");
        i=3;
        start:
