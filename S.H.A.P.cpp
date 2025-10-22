@@ -41,13 +41,13 @@ do{
   if(strcmp(user,user1)==0 && strcmp(pass,pass1)==0)
    {
    	fglog:
+   	   system("cls");
    	   printf("hello and welcome to\n");
    	   printf("S  . H  . A    . P\n");
    	   printf("SKYE HOME ACCESS POINT\n");
    	   printf("if you don't know command enter help\n\n");
        i=3;
        start:
-       system("cls");
        printf("what do you want to do:");
        scanf("%s",direction2);
        if(strcmp(direction2,direction1)==0)
