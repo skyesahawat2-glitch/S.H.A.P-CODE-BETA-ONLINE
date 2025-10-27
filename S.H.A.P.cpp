@@ -22,9 +22,9 @@ int main (void)
        system("cls");
 log:
   char user[10], pass[10],direction2[12],direction3[3],direction5[20],name1[20],surename1[20],direction12[20],directionx[20],direction_tl[20],direction_link[20],music_band[20];
-  char user1[]="admin",pass1[]="pass",name[]="thee",surename[]="sahawat",direction1[]="access_sever",direction4[]="yes",direction8[]="access_helper",direction9[]="help",direction10[]="access_calculator",direction11[]="exit",direction_ttie[20];
+  char user1[]="admin",pass1[]="pass",name[]="thee",surename[]="sahawat",direction1[]="access_server",direction4[]="yes",direction8[]="access_helper",direction9[]="help",direction10[]="access_calculator",direction11[]="exit",direction_ttie[20];
   char cal1[]="plus",cal2[]="minus",cal3[]="multiply",cal4[]="divide",direction13[]="cam",direction14[]="exit",direction15[]="out",direction16[]="logout",direction17[]="access_pjmm",direction18[]="access_dmm",direction_yes[]="yes",direction_no[]="no",direction19[]="info",direction20[]="welcome",direction21[]="access_xcs";
-  char direction22[]="tls",direction23[]="j",direction24[]="ttie",direction_a[]="a",direction_d[]="d",direction_guide[]="guide",forgot[]="forgot",music_band1[]="ajr",pb1[]="iphonefive",user_help[]="help",direction_ver[]="ver";
+  char direction22[]="tls",direction23[]="j",direction24[]="ttie",direction_a[]="a",direction_d[]="d",direction_guide[]="guide",forgot[]="forgot",music_band1[]="ajr",pb1[]="iphonefive",user_help[]="help",direction_ver[]="ver",direction_nope[]="nope";
   char cal[20],ps[20],direction_dmm[20],pb[20];
   int i=0;
   float num1,num2,num3,num4;
@@ -101,11 +101,13 @@ do{
          system("cls");
          goto start;
 		 }
-		 else if (strcmp(direction5,direction_no)==0)
+		 else if(strcmp(direction5,direction_no)==0)
 		 {
+		 system("cls");
 		 printf("ok\n");
 		 system("pause");
-		 system("pause");
+		 system("cls");
+		 goto start;
 		 }
 		 else
 		 {
@@ -262,7 +264,7 @@ do{
 	   system("cls");
 	   printf("------welcome to help terminal------\n");
 	   printf("code list\n");
-	   printf("1.access_sever = start S.H.S\n");
+	   printf("1.access_server = start S.H.S\n");
 	   printf("2.access_calculator = run calculator\n");
 	   printf("3.access_helper = run H.E.L.P.E.R (admin only)\n");
 	   printf("4.access_pjmm = run P.J.M.M (admin only)\n");
