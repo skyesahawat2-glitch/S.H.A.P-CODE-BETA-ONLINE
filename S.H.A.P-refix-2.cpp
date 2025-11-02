@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
+#include <windows.h>
 int main (void)
 {
 	sleep(1);
@@ -1013,6 +1014,7 @@ do{
      printf("error:username or password not found\n!!please try again!! %d/3\n",i+1);
      if(i<2)
 	 {
+	  Beep(600,200);
       system("pause");
       system("cls");
 	 }
@@ -1020,7 +1022,10 @@ do{
 	 {
 	 system("cls");
      printf("access denied %d/3",i+1);
-     return 0;
+	 Beep(600,200);
+	 Beep(600,200);
+	 Beep(600,200);
+	 return 0;
     }
   }
   i++;
