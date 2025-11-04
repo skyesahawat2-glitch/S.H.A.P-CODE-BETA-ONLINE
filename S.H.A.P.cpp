@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
+#include <windows.h>
 int main (void)
 {
 	sleep(1);
@@ -20,6 +21,7 @@ int main (void)
        printf(".-. ..- -. / ... .-.-.- .... .-.-.- .- .-.-.- .--. / ... -.-- ... - . -- / ... -.-- ... - . -- / -.-. --- -- .--. .. .-.. .. -. --. / .--. .-. --- --. .-. .- -- / .---- / .-. ..- -. / .--. .-. --- --. .-. .- -- / ..--- / .-. ..- -. / .--. .-. --- --. .-. .- -- / ...-- / .-. ..- -. / .--. .-. --- --. .-. .- -- / .--. .-. --- .--. . .-. - -.-- ---... --- -.-");
        sleep(0.9);
        system("cls");
+       Beep(400,1000);
 log:
   char user[10], pass[10],direction2[12],direction3[3],direction5[20],name1[20],surename1[20],direction12[20],directionx[20],direction_tl[20],direction_link[20],music_band[20];
   char user1[]="admin",pass1[]="pass",name[]="thee",surename[]="sahawat",direction1[]="access_server",direction4[]="yes",direction8[]="access_helper",direction9[]="help",direction10[]="access_calculator",direction11[]="exit",direction_ttie[20];
@@ -882,7 +884,7 @@ do{
 	   else if (strcmp(direction2,direction_ver)==0)
 	   {
 	   system("cls");
-	   printf("S.H.A.P system version 1.0\n");
+	   printf("S.H.A.P system version 1.1\n");
 	   printf("--------------------------\n");
 	   system("pause");
 	   system("cls");
@@ -1015,6 +1017,7 @@ do{
      printf("error:username or password not found\n!!please try again!! %d/3\n",i+1);
      if(i<2)
 	 {
+	  Beep(600,200);
       system("pause");
       system("cls");
 	 }
@@ -1022,6 +1025,9 @@ do{
 	 {
 	 system("cls");
      printf("access denied %d/3",i+1);
+     Beep(600,100);
+	 Beep(600,100);
+	 Beep(600,100);
      return 0;
     }
   }

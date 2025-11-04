@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
-#include <windows.h>
 int main (void)
 {
 	sleep(1);
@@ -22,10 +21,10 @@ int main (void)
        sleep(0.9);
        system("cls");
 log:
-  char user[10], pass[10],direction_main[12],direction3[3],direction5[20],name1[20],surename1[20],direction12[20],directionx[20],direction_tl[20],direction_link[20],music_band[20];
-  char user1[]="admin",pass1[]="pass",name[]="thee",surename[]="sahawat",direction1[]="access_sever",direction4[]="yes",direction8[]="access_helper",direction9[]="help",direction10[]="access_calculator",direction11[]="exit",direction_ttie[20];
+  char user[10], pass[10],direction2[12],direction3[3],direction5[20],name1[20],surename1[20],direction12[20],directionx[20],direction_tl[20],direction_link[20],music_band[20];
+  char user1[]="admin",pass1[]="pass",name[]="thee",surename[]="sahawat",direction1[]="access_server",direction4[]="yes",direction8[]="access_helper",direction9[]="help",direction10[]="access_calculator",direction11[]="exit",direction_ttie[20];
   char cal1[]="plus",cal2[]="minus",cal3[]="multiply",cal4[]="divide",direction13[]="cam",direction14[]="exit",direction15[]="out",direction16[]="logout",direction17[]="access_pjmm",direction18[]="access_dmm",direction_yes[]="yes",direction_no[]="no",direction19[]="info",direction20[]="welcome",direction21[]="access_xcs";
-  char direction22[]="tls",direction23[]="j",direction24[]="ttie",direction_a[]="a",direction_d[]="d",direction_guide[]="guide",forgot[]="forgot",music_band1[]="ajr",pb1[]="iphonefive",user_help[]="help",direction_ver[]="ver";
+  char direction22[]="tls",direction23[]="j",direction24[]="ttie",direction_a[]="a",direction_d[]="d",direction_guide[]="guide",forgot[]="forgot",music_band1[]="ajr",pb1[]="iphonefive",user_help[]="help",direction_ver[]="ver",direction_nope[]="nope";
   char cal[20],ps[20],direction_dmm[20],pb[20];
   int i=0;
   float num1,num2,num3,num4;
@@ -50,8 +49,8 @@ do{
        i=3;
        start:
        printf("what do you want to do:");
-       scanf("%s",direction_main);
-       if(strcmp(direction_main,direction1)==0)
+       scanf("%s",direction2);
+       if(strcmp(direction2,direction1)==0)
        {
        	//sever
        	system("cls");
@@ -102,11 +101,13 @@ do{
          system("cls");
          goto start;
 		 }
-		 else if (strcmp(direction5,direction_no)==0)
+		 else if(strcmp(direction5,direction_no)==0)
 		 {
+		 system("cls");
 		 printf("ok\n");
 		 system("pause");
-		 system("pause");
+		 system("cls");
+		 goto start;
 		 }
 		 else
 		 {
@@ -117,7 +118,7 @@ do{
 		  goto SHS;
 		 }
        }
-       else if (strcmp(direction_main,direction17)==0)
+       else if (strcmp(direction2,direction17)==0)
        {
        	//P.J.M.M
        	system("cls");
@@ -193,12 +194,12 @@ do{
         goto start;
 	   }
        }
-       else if (strcmp(direction_main,direction14)==0)
+       else if (strcmp(direction2,direction14)==0)
        {
        	system("cls");
        	return 0;
 	   }
-       else if (strcmp(direction_main,direction8)==0)
+       else if (strcmp(direction2,direction8)==0)
        {
        	//helper
        system("cls");
@@ -257,13 +258,13 @@ do{
 	   goto start;
 	   }
 	   }
-	   else if(strcmp(direction_main,direction9)==0)
+	   else if(strcmp(direction2,direction9)==0)
 	   {
 	   	//help
 	   system("cls");
 	   printf("------welcome to help terminal------\n");
 	   printf("code list\n");
-	   printf("1.access_sever = start S.H.S\n");
+	   printf("1.access_server = start S.H.S\n");
 	   printf("2.access_calculator = run calculator\n");
 	   printf("3.access_helper = run H.E.L.P.E.R (admin only)\n");
 	   printf("4.access_pjmm = run P.J.M.M (admin only)\n");
@@ -278,7 +279,7 @@ do{
 	   system("cls");
 	   goto start;
 	   }
-	   else if (strcmp(direction_main,direction10)==0)
+	   else if (strcmp(direction2,direction10)==0)
 	   {
 	   	//calculator
 	   	char another_yes[]="yes",another_no[]="no";
@@ -410,19 +411,19 @@ do{
 		goto cal1;
 		}
 	   }
-	   else if (strcmp(direction_main,direction11)==0)
+	   else if (strcmp(direction2,direction11)==0)
 	   {
 	   	system("cls");
 	   printf("error:command not found\n");
 	   printf("-----------------------\n");
 	   return 0;
 	   }
-	   else if (strcmp(direction_main,direction16)==0)
+	   else if (strcmp(direction2,direction16)==0)
 	   {
 	   	system("cls");
 	   	goto log;
 	   }
-	   else if (strcmp(direction_main,direction19)==0)
+	   else if (strcmp(direction2,direction19)==0)
 	   {
 	   system("cls");
 	   printf("welcome to\n");
@@ -437,7 +438,7 @@ do{
 	   system("cls");
 	   goto start;
 	   }
-	   else if (strcmp(direction_main,direction21)==0)
+	   else if (strcmp(direction2,direction21)==0)
 	   {
 	   	//xcs
 	   	system("cls");
@@ -850,7 +851,7 @@ do{
 		goto xcs;
 		}
 		}
-	    else if (strcmp(direction_main,direction18)==0)
+	    else if (strcmp(direction2,direction18)==0)
        	{
        	system("cls");
        	printf("welcome to\n");
@@ -878,7 +879,7 @@ do{
 		goto start;
 		}
 	   }
-	   else if (strcmp(direction_main,direction_ver)==0)
+	   else if (strcmp(direction2,direction_ver)==0)
 	   {
 	   system("cls");
 	   printf("S.H.A.P system version 1.0\n");
@@ -1014,7 +1015,6 @@ do{
      printf("error:username or password not found\n!!please try again!! %d/3\n",i+1);
      if(i<2)
 	 {
-	  Beep(600,200);
       system("pause");
       system("cls");
 	 }
@@ -1022,10 +1022,7 @@ do{
 	 {
 	 system("cls");
      printf("access denied %d/3",i+1);
-	 Beep(600,200);
-	 Beep(600,200);
-	 Beep(600,200);
-	 return 0;
+     return 0;
     }
   }
   i++;
