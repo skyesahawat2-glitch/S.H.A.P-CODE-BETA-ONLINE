@@ -887,7 +887,7 @@ do{
 	   else if (strcmp(direction2,direction_ver)==0)
 	   {
 	   system("cls");
-	   printf("S.H.A.P system version 1.1\n");
+	   printf("S.H.A.P system version 1.2\n");
 	   printf("--------------------------\n");
 	   system("pause");
 	   system("cls");
