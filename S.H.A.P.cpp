@@ -3,11 +3,12 @@
 #include <unistd.h>
 #include <windows.h>
 #include <stdlib.h>
+#include <time.h> 
 int main (void)
 {
 	sleep(1);
 	  system("cls");
-       printf("1  2  3  4  5  6  7  8  9 + 0\nq  w  e  r  t  y  u  i  o  p\na  s  d  f  g  h  j  k  l  ;\n'  z  x  c  v  b  n  m  ,  .\n");
+       printf("1  2  3  4  5  6  7  8  9  0\nq  w  e  r  t  y  u  i  o  p\na  s  d  f  g  h  j  k  l  ;\n'  z  x  c  v  b  n  m  ,  .\n");
        sleep(0.9);
        system("cls");
        printf(".-. ..- -. / ... .-.-.- .... .-.-.- .- .-.-.- .--. / ... -.-- ... - . -- / ... -.-- ... - . -- / -.-. --- -- .--. .. .-.. .. -. --. / .--. .-. --- --. .-. .- -- / .---- / .-. ..- -.");
@@ -27,7 +28,8 @@ log:
   char user[10], pass[10],direction2[12],direction3[3],direction5[20],name1[20],surename1[20],direction12[20],directionx[20],direction_tl[20],direction_link[20],music_band[20];
   char user1[]="admin",pass1[]="pass",name[]="thee",surename[]="sahawat",direction1[]="access_server",direction4[]="yes",direction8[]="access_helper",direction9[]="help",direction10[]="access_calculator",direction11[]="exit",direction_ttie[20];
   char cal1[]="plus",cal2[]="minus",cal3[]="multiply",cal4[]="divide",direction13[]="cam",direction14[]="exit",direction15[]="out",direction16[]="logout",direction17[]="access_pjmm",direction18[]="access_dmm",direction_yes[]="yes",direction_no[]="no",direction19[]="info",direction20[]="welcome",direction21[]="access_xcs";
-  char direction22[]="tls",direction23[]="j",direction24[]="ttie",direction_a[]="a",direction_d[]="d",direction_guide[]="guide",forgot[]="forgot",music_band1[]="ajr",pb1[]="iphonefive",user_help[]="help",direction_ver[]="ver",direction_nope[]="nope",direction_note[]="note",direction_cmd[]="cmd",direction_cls[]="cls",hello[]="hello",hello_world[]="hello world";
+  char direction22[]="tls",direction23[]="j",direction24[]="ttie",direction_a[]="a",direction_d[]="d",direction_guide[]="guide",forgot[]="forgot",music_band1[]="ajr",pb1[]="iphonefive",user_help[]="help",direction_ver[]="ver",direction_nope[]="nope",direction_note[]="note",direction_cmd[]="cmd",direction_cls[]="cls";
+  char cmd[]="cmd",direction_time[]="time",direction_powershell[]="ps";
   char cal[20],ps[20],direction_dmm[20],pb[20];
   int i=0;
   float num1,num2,num3,num4;
@@ -36,6 +38,7 @@ do{
   printf("if you want to exit enter exit\n");
   printf("if you forgot username password enter forgot\n");
   printf("if you want call to tti employe enter help\n");
+  printf("if you want to open microsoft command prompt enter cmd\n");
   printf("--------------------------------------------\n");
   printf("username:");
   scanf("%s",user);
@@ -274,11 +277,12 @@ do{
 	   printf("5.access_dmm = run door manage ment\n");
 	   printf("6.note = open windows notepad\n");
 	   printf("7.cmd = open windows command prompt\n");
-	   printf("8.ver = S.H.A.P version\n");
-	   printf("9.access_xcs = run XCS\n");
-	   printf("10.info = show system info\n");
-	   printf("11.logout = logout\n");
-	   printf("12.exit = exit\n");
+	   printf("8.ps = open windows-power-shell\n");
+	   printf("9.ver = S.H.A.P version\n");
+	   printf("10.access_xcs = run XCS\n");
+	   printf("11.info = show system info\n");
+	   printf("12.logout = logout\n");
+	   printf("13.exit = exit\n");
 	   printf("-------------------------------------\n");
 	   system("pause");
 	   system("cls");
@@ -913,17 +917,23 @@ do{
 	   system("cls");
 	   goto start;
 	   }
-	   else if (strcmp(direction2,hello)==0)
+	   else if (strcmp(direction2,direction_time)==0)
 	   {
-	   system("cls");
-	   printf("hello");
-	   goto start; 
+	system("cls");
+	for (int i=0;i<3;i)
+     {
+     time_t now;
+     time(&now);
+     printf("time is: %s", ctime(&now));
+     sleep(1);
+     system("cls");
+     }
+     return 0;
 	   }
-	   else if (strcmp(direction2,hello_world)==0)
+	   else if (strcmp(direction2,direction_powershell)==0)
 	   {
-	    system("cls");
-	    printf("hello world");
-	    goto start;
+	   	system("cls");
+	   	system("powershell.exe");
 	   }
 	   else
 	   {
@@ -967,7 +977,12 @@ do{
 	}
     return 0;
    }
-   else if (strcmp(user,user_help)==0 && strcmp(user,user_help)==0)
+   else if (strcmp(user,cmd)==0 && strcmp(pass,cmd)==0)
+   {
+   system("cls");
+   system("cmd");
+   }
+   else if (strcmp(user,user_help)==0 && strcmp(pass,user_help)==0)
    {
    system("cls");
    printf("you reach the ttie hotline\n");
