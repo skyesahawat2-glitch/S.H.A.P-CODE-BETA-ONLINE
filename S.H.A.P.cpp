@@ -143,6 +143,8 @@ do{
        	printf("new project count:1\n");
        	printf("code list\n");
        	printf("1.access_dmm = door manage ment\n");
+       	printf("2.out = exit this program\n");
+       	printf("3.exit = exit all program\n");
        	printf("project selected:");
        	scanf("%s",ps);
        	if (strcmp(ps,direction18)==0)
@@ -174,7 +176,6 @@ do{
 		}
 		else
 		{
-		system("cls");
 		printf("command not found\n");
 		printf("-----------------\n");
 		system("pause");
@@ -182,6 +183,16 @@ do{
 		goto dmm;
 		}
 		}
+		else if (strcmp(ps,direction15)==0)
+		{
+		system("cls");
+		goto start;
+		}
+	   else if (strcmp(ps,direction11)==0)
+	   {
+	   	system("cls");
+	    return 0;
+	   }
 	   else
 	   {
 	   	printf("project not found\n");
@@ -192,6 +203,7 @@ do{
        }
        else 
        {
+       	system("cls");
         printf("you don't have permission to access this program\n");
         printf("please don't access this program again\n");
         sleep(1);
