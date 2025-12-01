@@ -187,7 +187,6 @@ do{
 		{
 		system("cls");
 		system("git status");
-		sleep(1);
         system("cmd");
 		}
 		else if (strcmp(ps,direction15)==0)
