@@ -143,8 +143,9 @@ do{
        	printf("new project count:1\n");
        	printf("code list\n");
        	printf("1.access_dmm = door manage ment\n");
-       	printf("2.out = exit this program\n");
-       	printf("3.exit = exit all program\n");
+       	printf("2.git = access git");
+       	printf("3.out = exit this program\n");
+       	printf("4.exit = exit all program\n");
        	printf("project selected:");
        	scanf("%s",ps);
        	if (strcmp(ps,direction18)==0)
