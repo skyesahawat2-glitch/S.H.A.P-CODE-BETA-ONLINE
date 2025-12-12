@@ -29,7 +29,7 @@ log:
   char user1[]="admin",pass1[]="pass",name[]="thee",surename[]="sahawat",direction1[]="access_server",direction4[]="yes",direction8[]="access_helper",direction9[]="help",direction10[]="access_calculator",direction11[]="exit",direction_ttie[20];
   char cal1[]="plus",cal2[]="minus",cal3[]="multiply",cal4[]="divide",direction13[]="cam",direction14[]="exit",direction15[]="out",direction16[]="logout",direction17[]="access_pjmm",direction18[]="access_dmm",direction_yes[]="yes",direction_no[]="no",direction19[]="info",direction20[]="welcome",direction21[]="access_xcs";
   char direction22[]="tls",direction23[]="j",direction24[]="ttie",direction_a[]="a",direction_d[]="d",direction_guide[]="guide",forgot[]="forgot",music_band1[]="ajr",pb1[]="iphonefive",user_help[]="help",direction_ver[]="ver",direction_nope[]="nope",direction_note[]="note",direction_cmd[]="cmd",direction_cls[]="cls";
-  char cmd[]="cmd",direction_time[]="time",direction_powershell[]="ps",direction_git[]="git",direction_smp[]="access_smp";
+  char cmd[]="cmd",direction_time[]="time",direction_powershell[]="ps",direction_git[]="git",direction_smp[]="access_smp",smp_list[]="list";
   char cal[20],ps[20],direction_dmm[20],pb[20];
   //for SMP
   char ch3[]="ch3";
@@ -293,18 +293,19 @@ do{
 	   printf("------welcome to help terminal------\n");
 	   printf("code list\n");
 	   printf("1.access_server = start S.H.S\n");
-	   printf("2.access_calculator = run calculator\n");
+	   printf("2.access_calculator = open calculator\n");
 	   printf("3.access_helper = run H.E.L.P.E.R (admin only)\n");
-	   printf("4.access_pjmm = run P.J.M.M (admin only)\n");
-	   printf("5.access_dmm = run door manage ment\n");
-	   printf("6.note = open windows notepad\n");
-	   printf("7.cmd = open windows command prompt\n");
-	   printf("8.ps = open windows-power-shell\n");
-	   printf("9.ver = S.H.A.P version\n");
-	   printf("10.access_xcs = run XCS\n");
-	   printf("11.info = show system info\n");
-	   printf("12.logout = logout\n");
-	   printf("13.exit = exit\n");
+	   printf("4.access_pjmm = open P.J.M.M (admin only)\n");
+	   printf("5.access_dmm = open door manage ment\n");
+	   printf("6.access_smp = open S.H.A.P MUSIC PLAYER");
+	   printf("7.note = open windows notepad\n");
+	   printf("8.cmd = open windows command prompt\n");
+	   printf("9.ps = open windows-power-shell\n");
+	   printf("10.ver = S.H.A.P version\n");
+	   printf("11.access_xcs = run XCS\n");
+	   printf("12.info = show system info\n");
+	   printf("13.logout = logout\n");
+	   printf("14.exit = exit\n");
 	   printf("-------------------------------------\n");
 	   system("pause");
 	   system("cls");
@@ -914,13 +915,22 @@ do{
 	   {
 	   system("cls");
 	   printf("hello and welcome to\n");
+	   smp:
 	   printf("S       M	 P\n");
 	   printf("S.H.A.P MUSIC PLAYER\n");
+	   printf("playlist = list\n");
 	   printf("SMP>");
 	   scanf("%s",direction_smpcmd);
 	   if (strcmp(direction_smpcmd,ch3)==0)
 	   {
-	   	system("D:\ch3.wav");
+	   	system("C:\ch3.mp4");
+	   	system ("cls");
+	   	goto smp;
+	   }
+	   else if (strcmp(direction_smpcmd,smp_list)==0)
+	   {
+	   	printf("hello world\n");
+	   	return 0;
 	   }
 	   }
 	   else if (strcmp(direction2,direction_ver)==0)
