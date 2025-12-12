@@ -25,12 +25,15 @@ int main (void)
        system("cls");
        Beep(400,600);
 log:
-  char user[10], pass[10],direction2[12],direction3[3],direction5[20],name1[20],surename1[20],direction12[20],directionx[20],direction_tl[20],direction_link[20],music_band[20];
+  char user[10], pass[10],direction2[12],direction3[3],direction5[20],name1[20],surename1[20],direction12[20],directionx[20],direction_tl[20],direction_link[20],music_band[20],direction_smpcmd[40];
   char user1[]="admin",pass1[]="pass",name[]="thee",surename[]="sahawat",direction1[]="access_server",direction4[]="yes",direction8[]="access_helper",direction9[]="help",direction10[]="access_calculator",direction11[]="exit",direction_ttie[20];
   char cal1[]="plus",cal2[]="minus",cal3[]="multiply",cal4[]="divide",direction13[]="cam",direction14[]="exit",direction15[]="out",direction16[]="logout",direction17[]="access_pjmm",direction18[]="access_dmm",direction_yes[]="yes",direction_no[]="no",direction19[]="info",direction20[]="welcome",direction21[]="access_xcs";
   char direction22[]="tls",direction23[]="j",direction24[]="ttie",direction_a[]="a",direction_d[]="d",direction_guide[]="guide",forgot[]="forgot",music_band1[]="ajr",pb1[]="iphonefive",user_help[]="help",direction_ver[]="ver",direction_nope[]="nope",direction_note[]="note",direction_cmd[]="cmd",direction_cls[]="cls";
-  char cmd[]="cmd",direction_time[]="time",direction_powershell[]="ps",direction_git[]="git";
+  char cmd[]="cmd",direction_time[]="time",direction_powershell[]="ps",direction_git[]="git",direction_smp[]="access_smp";
   char cal[20],ps[20],direction_dmm[20],pb[20];
+  //for SMP
+  char ch3[]="ch3";
+  //for SMP
   int i=0;
   float num1,num2,num3,num4;
 do{
@@ -906,6 +909,19 @@ do{
 		system("cls");
 		goto start;
 		}
+	   }
+	   else if (strcmp(direction2,direction_smp)==0)
+	   {
+	   system("cls");
+	   printf("hello and welcome to\n");
+	   printf("S       M	 P\n");
+	   printf("S.H.A.P MUSIC PLAYER\n");
+	   printf("SMP>");
+	   scanf("%s",direction_smpcmd);
+	   if (strcmp(direction_smpcmd,ch3)==0)
+	   {
+	   	system("D:\ch3.wav");
+	   }
 	   }
 	   else if (strcmp(direction2,direction_ver)==0)
 	   {
