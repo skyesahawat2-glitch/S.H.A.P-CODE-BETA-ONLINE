@@ -4,8 +4,17 @@
 #include <windows.h>
 #include <stdlib.h>
 #include <time.h> 
+void fullscreen()
+{
+	keybd_event(VK_MENU,0x38,0,0);
+	keybd_event(VK_RETURN,0x1c,0,0);
+	keybd_event(VK_RETURN,0x1c,KEYEVENTF_KEYUP,0);
+	keybd_event(VK_MENU,0x38,KEYEVENTF_KEYUP,0);
+  //	return;
+}
 int main (void)
 {
+	fullscreen();
 	sleep(1);
 	  system("cls");
        printf("1  2  3  4  5  6  7  8  9  0\nq  w  e  r  t  y  u  i  o  p\na  s  d  f  g  h  j  k  l  ;\n'  z  x  c  v  b  n  m  ,  .\n");
@@ -297,7 +306,7 @@ do{
 	   printf("3.access_helper = run H.E.L.P.E.R (admin only)\n");
 	   printf("4.access_pjmm = open P.J.M.M (admin only)\n");
 	   printf("5.access_dmm = open door manage ment\n");
-	   printf("6.access_smp = open S.H.A.P MUSIC PLAYER");
+	   printf("6.access_smp = open S.H.A.P MUSIC PLAYER\n");
 	   printf("7.note = open windows notepad\n");
 	   printf("8.cmd = open windows command prompt\n");
 	   printf("9.ps = open windows-power-shell\n");
@@ -508,8 +517,8 @@ do{
 	    printf("J-LINK SYSTEM:ONLINE");
 	    sleep(2);
 	    system("cls");
-	    system("cls");
 	    jlink:
+	    sleep(1);
 	    printf("-");
 	    sleep(0.9);
 	    system("cls");
@@ -621,8 +630,183 @@ do{
 	    if (strcmp(direction_link,direction_a)==0)
 	    {
 	    system("cls");
-	    printf("REQUEST ACCEPT\n");
-	    printf("--------------\n");
+	    printf("J-LINK DOOR CLOSING");
+	    sleep(5);
+	    system("cls");
+	    sleep(1);
+	    printf("ERROR:DOOR CLOSE FAILUER");
+	    sleep(1);
+	    system("cls");
+	    printf("                        ");
+	    sleep(1);
+	    system("cls");
+	    printf("ERROR:DOOR CLOSE FAILUER");
+	    sleep(1);
+	    system("cls");
+	    printf("                        ");
+	    sleep(1);
+	    system("cls");
+	    printf("ERROR:DOOR CLOSE FAILUER");
+	    sleep(4);
+	    system("cls");
+	    printf("AUTOMATIC RESTART J-LINK SYSTEM\n");
+	    printf("---------------------\n");
+	    printf("RESTART IN [3]");
+	    sleep(1);
+	    system("cls");
+	    printf("AUTOMATIC RESTART J-LINK SYSTEM\n");
+	    printf("---------------------\n");
+	    printf("RESTART IN [2]");
+	    sleep(1);
+	    system("cls");
+	    printf("AUTOMATIC RESTART J-LINK SYSTEM\n");
+	    printf("---------------------\n");
+	    printf("RESTART IN [1]");
+	    sleep(2);
+	    system("cls");
+	    sleep(5);
+	    printf("AUTOMATIC RESTART SYSTEM DON'T TEXT ENYTHING\n");
+	    printf("--------------------------------------------\n");
+	    printf("command line:");
+	    sleep(1);
+	    system("cls");
+	    printf("AUTOMATIC RESTART SYSTEM DON'T TEXT ENYTHING\n");
+	    printf("--------------------------------------------\n");
+	    printf("command line:R");
+	    sleep(1);
+	    system("cls");
+	    printf("AUTOMATIC RESTART SYSTEM DON'T TEXT ENYTHING\n");
+	    printf("--------------------------------------------\n");
+	    printf("command line:RE");
+	    sleep(1);
+	    system("cls");
+	    printf("AUTOMATIC RESTART SYSTEM DON'T TEXT ENYTHING\n");
+	    printf("--------------------------------------------\n");
+	    printf("command line:RES");
+	    sleep(1);
+	    system("cls");
+	    printf("AUTOMATIC RESTART SYSTEM DON'T TEXT ENYTHING\n");
+	    printf("--------------------------------------------\n");
+	    printf("command line:REST");
+	    sleep(1);
+	    system("cls");
+	    printf("AUTOMATIC RESTART SYSTEM DON'T TEXT ENYTHING\n");
+	    printf("--------------------------------------------\n");
+	    printf("command line:RESTA");
+	    sleep(1);
+	    system("cls");
+	    printf("AUTOMATIC RESTART SYSTEM DON'T TEXT ENYTHING\n");
+	    printf("--------------------------------------------\n");
+	    printf("command line:RESTAR");
+	    sleep(1);
+	    system("cls");
+	    printf("AUTOMATIC RESTART SYSTEM DON'T TEXT ENYTHING\n");
+	    printf("--------------------------------------------\n");
+	    printf("command line:RESTART");
+	    sleep(1);
+	    system("cls");
+	    sleep(1);
+	    printf("-");
+	    sleep(0.9);
+	    system("cls");
+	    printf("--");
+	    sleep(0.9);
+	    system("cls");
+	    printf("---");
+	    sleep(0.9);
+	    system("cls");
+	    printf("----");
+	    sleep(0.9);
+	    system("cls");
+	    printf(" ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("P ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("UP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("OUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("COUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("NCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("Y UNCOP ----");
+	    sleep(0.9);
+	    printf("CY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("NCY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("ENCY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("GENCY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("RGENCY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("ERGENCY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("MERGENCY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("EMERGENCY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf(" EMERGENCY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("K EMERGENCY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("NK EMERGENCY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("INK EMERGENCY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("LINK EMERGENCY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("-LINK EMERGENCY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("J-LINK EMERGENCY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("J-LINK EMERGENCY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf(" J-LINK EMERGENCY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("- J-LINK EMERGENCY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("-- J-LINK EMERGENCY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("-- J-LINK EMERGENCY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("--- J-LINK EMERGENCY UNCOUP ----");
+	    sleep(0.9);
+	    system("cls");
+	    printf("---- J-LINK EMERGENCY UNCOUP ----\n");
+	    sleep(1);
+	    printf("system loading...\n");
 	    sleep(3);
 	    system("cls");
 	    printf("J-LINK DOOR CLOSING");
@@ -929,8 +1113,29 @@ do{
 	   }
 	   else if (strcmp(direction_smpcmd,smp_list)==0)
 	   {
-	   	printf("hello world\n");
+	   	printf("1.ch3\n");
+	   	printf("2.out = exit SMP\n");
+	   	printf("3.exit = exit S.H.A.P\n");
 	   	return 0;
+	   }
+	   else if (strcmp(direction_smpcmd,direction15)==0)
+	   {
+	   system("cls");
+	   goto start;
+	   }
+	   else if (strcmp(direction_smpcmd,direction14)==0)
+	   {
+	   	system("cls");
+	   	return 0;
+       }
+	   else
+	   {
+	   	system("cls");
+	   	printf("commad not found\n");
+	   	printf("----------------\n");
+	   	system("pause");
+	   	system("cls");
+	   	goto smp;
 	   }
 	   }
 	   else if (strcmp(direction2,direction_ver)==0)
@@ -952,6 +1157,12 @@ do{
 	   system("cls");
 	   goto start;
 	   }
+	   else if (strcmp(direction2,direction_git)==0)
+	   {
+		system("cls");
+		system("git status");
+        system("cmd");
+	   }
 	   else if (strcmp(direction2,direction_cmd)==0)
 	   {
 	   system("cls");
@@ -969,7 +1180,7 @@ do{
      {
      time_t now;
      time(&now);
-     printf("time is: %s", ctime(&now));
+     printf("\n\n\n\n\n         %s", ctime(&now));
      sleep(1);
      system("cls");
      }
