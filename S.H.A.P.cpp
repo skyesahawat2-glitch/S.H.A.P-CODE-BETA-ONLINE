@@ -1142,7 +1142,7 @@ do{
 	   {
 	   //ver//
 	   system("cls");
-	   printf("S.H.A.P system version 1.2\n");
+	   printf("S.H.A.P system version 1.3\n");
 	   printf("--------------------------\n");
 	   system("pause");
 	   system("cls");
