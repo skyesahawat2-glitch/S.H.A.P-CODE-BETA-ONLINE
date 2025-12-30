@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <windows.h>
 #include <stdlib.h>
-#include <time.h> 
+#include <time.h>
 void fullscreen()
 {
 	keybd_event(VK_MENU,0x38,0,0);
@@ -14,6 +14,7 @@ void fullscreen()
 }
 int main (void)
 {
+	
 	fullscreen();
 	sleep(1);
 	  system("cls");
@@ -1107,7 +1108,7 @@ do{
 	   scanf("%s",direction_smpcmd);
 	   if (strcmp(direction_smpcmd,ch3)==0)
 	   {
-	   	system("C:\ch3.mp4");
+	   	system("C:\ch3.wav");
 	   	system ("cls");
 	   	goto smp;
 	   }
